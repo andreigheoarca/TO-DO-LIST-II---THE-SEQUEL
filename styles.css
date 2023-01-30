@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Texta Black";
+  src: url("./Typefaces/Texta-Black-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Texta Book";
+  src: url("./Typefaces/Texta-Book-webfont.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #edede9;
+  font-family: "Texta Book";
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 35rem;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  font-family: "Texta Book";
+  font-size: 1rem;
+  color: #1a1a1a;
+  border: none;
+  /* background: #edede9; */
+  max-width: 35rem;
+}
+
+.todos li {
+  background: #e3d5ca;
+}
+
+.delete {
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.edit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  margin-left: 28rem;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-family: "Texta Black";
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+#text-color {
+  font-family: "Texta Black";
+  font-size: 1.4rem;
+  color: #1a1a1a;
+}
+
+.filtered {
+  display: none !important;
+}
+
+.clear-all {
+  display: flex;
+  padding: 0.1rem 1rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border: none;
+  cursor: pointer;
+  background: #d6ccc2;
+  border-radius: 28rem;
+  font-family: "Texta Book";
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.alert-bubble {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2rem;
+  /* padding: 0.2rem 1rem; */
+  background: #d5bdaf;
+  width: 8rem;
+  height: 2rem;
+  /* max-width: 8rem; */
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  visibility: hidden;
+}
+
+.alert-bubble p {
+  display: flex;
+  font-family: "Texta Book";
+  color: #1a1a1a;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.show {
+  visibility: visible;
+}
+
+.show p {
+  color: #fffcf2;
+}
+
+.success {
+  background: #70e000;
+}
+
+.danger {
+  background: #dc2f02;
+}
