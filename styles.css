@@ -47,7 +47,7 @@ input[type="text"]:focus {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: absolute;
+  position: inherit;
   margin-left: 28rem;
   cursor: pointer;
   color: #1a1a1a;
@@ -122,4 +122,44 @@ h1 {
 
 .danger {
   background: #dc2f02;
+}
+
+@media screen and (min-width: 280px) {
+  .edit {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .edit {
+    margin-left: 14rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .edit {
+    margin-left: 12rem;
+  }
+}
+@media screen and (min-width: 412px) {
+  .edit {
+    margin-left: 15rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .edit {
+    margin-left: 16rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .edit {
+    margin-left: 25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .edit {
+    margin-left: 25rem;
+  }
 }
