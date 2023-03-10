@@ -22,7 +22,7 @@ function displayItems() {
       let storedId = item.id;
       let storedItem = item.item;
       console.log(storedId, storedItem);
-      list.innerHTML = `<li
+      list.innerHTML += `<li
   class="list-group-item d-flex justify-content-between align-items-center" data-id="${storedId}"
   >
   <span>${storedItem}</span>
